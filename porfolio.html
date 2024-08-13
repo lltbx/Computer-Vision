@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/14b1fbfe43.js" crossorigin="anonymous"></script>
+<title>Cloud </title>
+<link rel="stylesheet" href="style.css">
+<script src="frontend.js" defer></script>
+<style>
+
+.fa-envelope {
+  position: absolute;
+  top: 55%;
+  left: 41%;
+  font-size: 50px;
+}
+
+
+
+.center {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+ 
+}
+
+.light-mode .fa-regular.fa-moon {
+    color: black;
+    font-size: 2em;
+}
+
+
+.fa-regular.fa-moon {
+    color: white;
+    font-size: 2em;
+}
+
+
+body {
+  padding: 0px 0;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  font-size: 25px;
+  
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+  
+}
+       
+
+</style>
+</head>
+<body>
+
+<h2><a href="index.html">Home</a></h2>
+<h3><a href="resume.html">Resume</a></h3>
+<h4><a href="portfolio.html">Portfolio</a></h4>
+<h5><a href="architecture.html">Website Architecture</a></h5>
+
+<div class="center">
+        <button onclick="myFunction()" class="center"><i class="fa-regular fa-moon"></i></button>
+</div>
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+}
+</script>
+
+</body>
+</html>
