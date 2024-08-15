@@ -1,12 +1,12 @@
 # We don't want to start from scratch.
 # That is why we tell node here to use the current node image as base.
-FROM node:alpine3.11
+FROM python:3.12
 
 # Create an application directory
-RUN mkdir -p /app
+RUN mkdir -p /vision
 
 # The /app directory should act as the main application directory
-WORKDIR /app
+WORKDIR /vision
 
 # Copy the app package and package-lock.json file
 COPY frontend/package*.json ./
