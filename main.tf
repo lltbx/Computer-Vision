@@ -16,7 +16,7 @@ provider "azure" {
 #Resources block 
 resource "azurerm_resource_group" "group_main" {
   name     = "example-resources"
-  location = "West Europe"
+  location = "East Europe"
 }
 
 resource "azurerm_cognitive_account" "image recogniton"{
