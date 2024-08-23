@@ -27,4 +27,7 @@ resource "azurerm_cognitive_account" "image recogniton"{
     sku_name = F0
 }
 
-resource "" "blob storage" {}
+resource "" "blob storage" {
+
+  
+}
